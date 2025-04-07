@@ -56,6 +56,20 @@ public class TiposDeDatos {
         String nombreString = "Ana";
         String apellido = new String("García");
 
+        // Concatenación
+        String nombreCompleto = nombreString + " " + apellido;
+
+        System.out.println(nombreCompleto);
+
+        // Arrays
+
+        // Array de enteros de tamaño 5
+        int[] numeros = new int[5];
+
+        int[] primos = {2, 3, 5, 7, 11};
+
+        // Acceder a la posición del array (empieza por 0 siempre)
+        numeros[0] = 10;
 
         
     }
