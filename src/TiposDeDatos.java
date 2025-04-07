@@ -71,7 +71,40 @@ public class TiposDeDatos {
         // Acceder a la posición del array (empieza por 0 siempre)
         numeros[0] = 10;
 
-        
+        // Conversión de tipos (casting)
+
+        // Conversión implícita (automática)
+        byte numeroByte = 25;
+        int numeroEntero = numeroByte; // conversión implícita
+
+        // Conversión explícita
+        double numeroDoble = 9.78;
+        System.out.println(numeroDoble);
+
+        int numeroEnteroNuevo = (int) numeroDoble;
+        System.out.println(numeroEnteroNuevo);
+
+        // Autoboxing
+        int primitivo = 42;
+        Integer objeto = primitivo;
+
+        // Unboxing
+        Double valorObjeto = 3.14;
+        double valorPrimitivo = valorObjeto;
+
+        // Conversiones entre String
+
+        String textoNumero = "123";
+        int number = Integer.parseInt(textoNumero);
+
+        String desdeEntero = String.valueOf(42); // "42"
+
+        // Conversiones entre caracteres y números
+
+        char letraA = 'A';
+        int valorNumericoA = letraA;
+
+        System.out.println(valorNumericoA);
     }
 
 }
