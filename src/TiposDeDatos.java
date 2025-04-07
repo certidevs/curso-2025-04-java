@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Date;
+
 public class TiposDeDatos {
 
     public static void main(String[] args) {
@@ -42,6 +45,19 @@ public class TiposDeDatos {
 
         long numeroMuyGrande = 1_234_567_890_123L;
 
+        // Tipos de referencia
+
+        Date fecha = new Date();
+
+        ArrayList<String> lista = new ArrayList<>();
+
+        // Tipo String
+
+        String nombreString = "Ana";
+        String apellido = new String("García");
+
+
+        
     }
 
 }
