@@ -83,5 +83,69 @@ public class Operadores {
 
         System.out.println("\nPromedio: " + promedio);
 
+        // Operadores de asignación
+        int edad = 25;
+        int aVar, bVar, cVar;
+        aVar = bVar = cVar = 10; // a, b y c tienen valor 10
+
+        // Operadores de bits
+        int flags = 0b1010;
+        flags &= 0b1100;
+
+        // Operador de igual
+
+        int aComparar = 5;
+        int bComparar = 5;
+        boolean sonIguales = (aComparar == bComparar);
+
+        // Comparación de String
+        String str1 = "hola";
+        String str2 = "hola";
+        boolean mismaReferencia = (str1 == str2);
+
+        boolean comparacionString = str1.equals(str2);
+
+        // Operador de desigualdad
+        int xDesigualdad = 8;
+        int yDesigualdad = 12;
+        boolean sonDiferentes = (xDesigualdad != yDesigualdad);
+
+        // Mayor que
+        int edadPersona = 25;
+        boolean esMayorDeEdad = (edad > 17);
+
+        // Menor que
+        int puntuacion = 65;
+        boolean suspenso = (puntuacion < 70);
+
+        // Comparación de tipos diferentes
+
+        int entero = 100;
+        long numeroLargo = 100L;
+        boolean comparacionDiferentesTipos = (entero == numeroLargo);
+
+        double decimal = 100.0;
+        boolean otraComparacion = (entero == decimal);
+
+        // Comparación de caracteres
+        char c1 = 'A';
+        char c2 = 'B';
+
+        boolean menorQue = (c1 < c2); // true
+        boolean mayorQue = ('z' > 'a'); // true
+
+        // Comparación de objetos
+
+        String cadena1 = "abc";
+        String cadena2 = "def";
+
+        boolean esMenor = cadena1.compareTo(cadena2) < 0;
+
+        // Operador instanceof
+        String texto = "Hola mundo";
+        boolean esString = texto instanceof String;
+        boolean esObject = texto instanceof Object;
+
+
     }
 }
