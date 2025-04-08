@@ -146,6 +146,37 @@ public class Operadores {
         boolean esString = texto instanceof String;
         boolean esObject = texto instanceof Object;
 
+        // Operadores lógicos
+
+        // AND (&&)
+        boolean condicionAND1 = true;
+        boolean condicionAND2 = false;
+
+        boolean resultadoAND = condicionAND1 && condicionAND2; // false
+
+        // OR (||)
+        boolean condicionOR1 = true;
+        boolean condicionOR2 = false;
+
+        boolean resultadoOR = condicionOR1 && condicionOR2; // false
+
+        // NOT (!)
+        boolean activo = true;
+        boolean inactivo = !activo;
+
+        // XOR (^)
+        boolean condicionXOR1 = true;
+        boolean condicionXOR2 = false;
+        boolean resultadoXORA = condicionXOR1 ^ condicionXOR2; // true
+
+        // Precedencia
+        // a ^ b ^ c
+        // (a ^ b) ^ c // (a ^ b) -> d
+        // d ^ c
+
+
+
+
 
     }
 }
