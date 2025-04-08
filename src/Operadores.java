@@ -75,7 +75,13 @@ public class Operadores {
         int resultadoSinParentesis = 10 + 20 * 3; // 70
         int resultadoConParentesis = (10 + 20) * 3; // 90
 
-        
+        // Ejemplo
+        int nota1 = 85;
+        int nota2 = 90;
+        int nota3 = 78;
+        double promedio = (nota1 + nota2 + nota3) / 3.0;
+
+        System.out.println("\nPromedio: " + promedio);
 
     }
 }
