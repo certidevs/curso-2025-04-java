@@ -210,6 +210,23 @@ public class EstructurasDeControl {
             System.out.println("Fruta de temporada: " + piezaDeFruta);
         }
 
+        // while
+        int contador = 1;
+
+        while (contador <= 5) {
+            System.out.println("Contador a " + contador);
+            contador++;
+        }
+
+        // do while
+        System.out.println();
+
+        int contadorDo = 1;
+
+        do {
+            System.out.println("Contador a " + contadorDo);
+            contadorDo++;
+        } while (contadorDo <= 5);
 
     }
 }
