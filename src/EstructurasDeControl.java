@@ -193,7 +193,23 @@ public class EstructurasDeControl {
             }
         };
 
+        // bucle for
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Iteración número: " + i);
+        }
 
-        
+        // varias variables de control
+        for (int i = 1, j = 10; i <= 10 && j >= 1; i++, j--) {
+            System.out.println("i = " + i + ", j = " + j);
+        }
+
+        // for-each
+        String[] frutas = {"Manzana", "Plátano", "Naranja", "Fresa"};
+
+        for (String piezaDeFruta : frutas) {
+            System.out.println("Fruta de temporada: " + piezaDeFruta);
+        }
+
+
     }
 }
