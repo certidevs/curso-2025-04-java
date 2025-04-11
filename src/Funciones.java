@@ -19,6 +19,18 @@ public class Funciones {
         funciones.saludar("María", 26);
 
         Funciones.mostrarFechaActual();
+
+        System.out.println();
+
+        funciones.imprimirNumeros(10);
+
+        funciones.imprimirNumeros(1, 2, 3, 400, 5);
+
+        // funciones.registrarUsuario("María", 26, "Avistamiento de aves", "Dibujar", "Videojuegos");
+
+        funciones.multiplicacion(2); // 2 * 2 = 4
+        funciones.multiplicacion(2, 5); // 2 * 5 = 10
+        funciones.multiplicacion(2, 3, 5); // 2 * 3 * 5 = 30
     }
 
     public int sumar(int numero1, int numero2) {
@@ -56,6 +68,41 @@ public class Funciones {
         System.out.println("Edad: " + edad);
     }
 
+    // varargs
+    public void imprimirNumeros(int... numeros) {
+        for (int numero : numeros) {
+            System.out.println(numero + " ");
+        }
+        // System.out.println();
+    }
+    // public void imprimirUnNumero(int numero);
+    // public void imprimirDosNumeros(int numero1, int numero2);
 
+    public void registrarUsuario(String nombre, int edad, String... intereses) {
+        System.out.println("Usuario: " + nombre + ", Edad: " + edad);
+        System.out.println("Intereses: " + String.join(", ", intereses));
+    }
+
+    // sobrecarga de métodos
+    public int multiplicacion(int numero) {
+        return numero * numero;
+    }
+
+    public int multiplicacion(int numero1, int numero2) {
+        return numero1 * numero2;
+    }
+
+    public int multiplicacion(int numero1, int numero2, int numero3) {
+        return numero1 * numero2 * numero3;
+    }
+
+    Persona {
+        String nombre;
+        String apellido;
+        int edad;
+
+        actualizar(String nombre) {;
+        actualizar(String nombre, int edad);
+    }
 
 }
