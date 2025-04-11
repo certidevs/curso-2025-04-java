@@ -96,13 +96,4 @@ public class Funciones {
         return numero1 * numero2 * numero3;
     }
 
-    Persona {
-        String nombre;
-        String apellido;
-        int edad;
-
-        actualizar(String nombre) {;
-        actualizar(String nombre, int edad);
-    }
-
 }
