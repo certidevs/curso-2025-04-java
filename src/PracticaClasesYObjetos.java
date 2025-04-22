@@ -235,3 +235,27 @@ class Cat extends Pet {
                 ", Raza: " + breed;
     }
 }
+
+// clase Lobo (Wolf) que hereda de AnimalSalvaje (WildAnimal)
+class Wolf extends WildAnimal {
+    // constructor
+    public Wolf(String habitat, int age, boolean endangeredSpecies) {
+        super(habitat, age, endangeredSpecies);
+    }
+
+    // implementas los métodos abstractos
+    @Override
+    public void eat() {
+        System.out.println("El lobo come carne.");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("El lobo duerme en " + habitat);
+    }
+
+    // método específico de lobo
+    public void howl() {
+        System.out.println("El lobo aulla: ¡AUUUUUUU~!");
+    }
+}
