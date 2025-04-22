@@ -1,6 +1,57 @@
 public class PracticaClasesYObjetos {
     public static void main(String[] args) {
 
+        // crear objetos
+        //  mascotas
+        Dog dog1 = new Dog("Guinea", "Méndez", 3, true, "Pomerania");
+        Dog dog2 = new Dog("Akira", "Roldan",3 ,true , "Chiguagua");
+        Dog dog3 = new Dog("Gilda", "nada",9, false, "speed aleman");
+        Dog dog4 = new Dog("Thor", "nada",12, false, "Pastor aleman y boxer");
+        Dog dog5 = new Dog("Chiky", "Israel",8 ,false , "Mestizo");
+
+        Cat cat1 = new Cat("Nara", "David",3, "Común");
+        Cat cat2 = new Cat("Luna", "Méndez", 2, "Persa");
+        Cat cat3 = new Cat("txispin", "Antonio", 10, "callejero");
+        Cat cat4 = new Cat("Kozka", "Iñigo", 6, "Común europeo");
+        Cat cat5 = new Cat("Beltza", "Sophia", 5, "Común europeo");
+        Cat cat6 = new Cat("Txuri", "Luna", 6, "Común europeo");
+        Cat cat7 = new Cat("tanya","Manuel",3,"Mestizo");
+
+        // animal salvaje
+        Wolf wolf1 = new Wolf("Bosque", 7, true);
+
+        // probar métodos de Dog
+        System.out.println(dog1.toString());
+        dog2.eat();
+        dog3.sleep();
+        dog4.playWithOwner();
+        dog5.bark();
+
+        System.out.println();
+
+        System.out.println(cat1.toString());
+        cat2.eat();
+        cat3.sleep();
+        cat4.meow();
+        cat5.eat();
+        cat6.sleep();
+        cat7.meow();
+
+        System.out.println();
+
+        // probar métodos de Lobo
+        System.out.println(wolf1.toString());
+        wolf1.eat();
+        wolf1.sleep();
+        wolf1.hunt();
+        wolf1.howl();
+
+        System.out.println();
+
+        wolf1.changeAge(-4);
+        wolf1.changeAge(7);
+        wolf1.changeAge(6);
+        wolf1.changeAge(8);
     }
 }
 
@@ -100,7 +151,7 @@ abstract class WildAnimal extends Animal {
 
     // método concreto de animales salvajes
     public void hunt() {
-        System.out.println("El animal salvaje está cazando en " + habitat);
+        System.out.println("El animal salvaje está cazando en el hábitat " + habitat);
     }
 
     // getters y setter
@@ -155,7 +206,7 @@ class Dog extends Pet {
 
     // métodos específico
     public void bark() {
-        System.out.println(name + "dice: ¡Guau, guau!");
+        System.out.println(name + " dice: ¡Guau, guau!");
     }
 
     // getters y setter
@@ -206,17 +257,17 @@ class Cat extends Pet {
     // implementar métodos abstractos
     @Override
     public void eat() {
-        System.out.println(name + "come sardinas.");
+        System.out.println(name + " come sardinas.");
     }
 
     @Override
     public void sleep(){
-        System.out.println(name + "está durmiendo en el sofá.");
+        System.out.println(name + " está durmiendo en el sofá.");
     }
 
     // métodos específicos
     public void meow() {
-        System.out.println(name + "dice: ¡Miau!");
+        System.out.println(name + " dice: ¡Miau!");
     }
 
     // getters y setter
@@ -251,7 +302,7 @@ class Wolf extends WildAnimal {
 
     @Override
     public void sleep() {
-        System.out.println("El lobo duerme en " + habitat);
+        System.out.println("El lobo duerme en el hábitat " + habitat);
     }
 
     // método específico de lobo
