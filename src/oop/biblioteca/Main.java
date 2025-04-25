@@ -1,6 +1,7 @@
 package oop.biblioteca;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Main {
 
@@ -56,6 +57,12 @@ public class Main {
         Author david = new Author();
         Libro libro1 = new Libro();
         Libro libro2 = new Libro();
+
+        // david.setLibro(libro1);
+        List<Libro> books = david.getLibros();
+        books.add(libro1);
+        books.add(libro2);
+
 
         david.getLibros().add(libro1);
         david.getLibros().add(libro2);
