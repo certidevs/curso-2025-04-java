@@ -15,6 +15,7 @@ public class Libro {
     private Double precio;
     private Boolean disponible;
     private LocalDate fechaPublicacion;
+    // private LocalDateTime fechaActualizacion;
 
     // constructor/es
 
