@@ -1,4 +1,4 @@
-package oop;
+package oop.animales;
 
 public class PracticaClasesYObjetos {
     public static void main(String[] args) {

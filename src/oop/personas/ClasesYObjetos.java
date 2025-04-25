@@ -1,4 +1,4 @@
-package oop;// import java.util.ArrayList;
+package oop.personas;// import java.util.ArrayList;
 
 public class ClasesYObjetos {
     // método main

@@ -1,4 +1,4 @@
-package oop;
+package oop.supermercado;
 
 import java.util.ArrayList;
 import java.util.List;
