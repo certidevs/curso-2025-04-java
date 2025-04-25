@@ -1,3 +1,5 @@
+package sintaxis;
+
 public class Operadores {
     public static void main(String[] args) {
 
@@ -63,7 +65,7 @@ public class Operadores {
         // sufijo
         contador++;
 
-        // Operadores aritméticos compuestos
+        // sintaxis.Operadores aritméticos compuestos
         int numero10 = 10;
 
         // yo quiero sumar 5 a numero10
@@ -83,12 +85,12 @@ public class Operadores {
 
         System.out.println("\nPromedio: " + promedio);
 
-        // Operadores de asignación
+        // sintaxis.Operadores de asignación
         int edad = 25;
         int aVar, bVar, cVar;
         aVar = bVar = cVar = 10; // a, b y c tienen valor 10
 
-        // Operadores de bits
+        // sintaxis.Operadores de bits
         int flags = 0b1010;
         flags &= 0b1100;
 
@@ -146,7 +148,7 @@ public class Operadores {
         boolean esString = texto instanceof String;
         boolean esObject = texto instanceof Object;
 
-        // Operadores lógicos
+        // sintaxis.Operadores lógicos
 
         // AND (&&)
         boolean condicionAND1 = true;

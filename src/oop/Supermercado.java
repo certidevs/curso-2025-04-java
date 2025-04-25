@@ -1,3 +1,5 @@
+package oop;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -64,7 +66,7 @@ class Categoria {
         this.productos = productos;
     }
 
-    // método para agregar un producto a Categoria
+    // método para agregar un producto a oop.Categoria
     public void addProducto(Producto producto) {
         // comprueba si el producto NO está ya en la lista
         if (!productos.contains(producto)) {
@@ -80,7 +82,7 @@ class Producto {
     private double precio; // precio unitario
     private int stock; // cantidad disponible
     private int categoriaId; // el ID de la categoría (no la referencia al objeto)
-    // private Categoria categoria; // relación bidireccional
+    // private oop.Categoria categoria; // relación bidireccional
 
     // constructor
     public Producto(int id, String nombre, double precio, int stock, int categoriaId) {
@@ -135,7 +137,7 @@ class Producto {
     // toString
     @Override
     public String toString() {
-        return "Producto{" +
+        return "oop.Producto{" +
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
                 ", precio=" + precio +

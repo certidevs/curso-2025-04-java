@@ -1,3 +1,5 @@
+package oop;
+
 public class PracticaClasesYObjetos {
     public static void main(String[] args) {
 
@@ -20,7 +22,7 @@ public class PracticaClasesYObjetos {
         // animal salvaje
         Wolf wolf1 = new Wolf("Bosque", 7, true);
 
-        // probar métodos de Dog
+        // probar métodos de oop.Dog
         System.out.println(dog1.toString());
         dog2.eat();
         dog3.sleep();
@@ -96,7 +98,7 @@ abstract class Animal {
     }
 }
 
-// clase Mascota (Pet) que hereda de Animal
+// clase Mascota (oop.Pet) que hereda de oop.Animal
 abstract class Pet extends Animal {
     // atributos específicos de Mascota
     protected String name; // nombre
@@ -136,7 +138,7 @@ abstract class Pet extends Animal {
     }
 }
 
-// clase AnimalSalvaje (WildAnimal) que hereda de Animal
+// clase AnimalSalvaje (oop.WildAnimal) que hereda de oop.Animal
 abstract class WildAnimal extends Animal {
     // atributos específicos
     protected String habitat; // hábitat
@@ -144,7 +146,7 @@ abstract class WildAnimal extends Animal {
 
     // constructor
     public WildAnimal(String habitat, int age, boolean endangeredSpecies) {
-        super(age); // llamamos al constructor de Animal
+        super(age); // llamamos al constructor de oop.Animal
         this.habitat = habitat;
         this.endangeredSpecies = endangeredSpecies;
     }
@@ -174,13 +176,13 @@ abstract class WildAnimal extends Animal {
     // toString para mostrar información
     @Override
     public String toString() {
-        return "Animal salvaje del hábitat: " + habitat +
+        return "oop.Animal salvaje del hábitat: " + habitat +
                 ", Edad: " + age +
                 ", En peligro de extinción: " + (endangeredSpecies ? "Sí" : "No");
     }
 }
 
-// clase Perro (Dog) que hereda de Pet (Mascota)
+// clase Perro (oop.Dog) que hereda de oop.Pet (Mascota)
 class Dog extends Pet {
     // atributos específicos de Perro
     private boolean pedigree;
@@ -237,14 +239,14 @@ class Dog extends Pet {
     // toString generado
     /*@Override
     public String toString() {
-        return "Dog{" +
+        return "oop.Dog{" +
                 "pedigree=" + pedigree +
                 ", breed='" + breed + '\'' +
                 '}';
     }*/
 }
 
-// clase Gato (Cat)
+// clase Gato (oop.Cat)
 class Cat extends Pet {
     private String breed; // raza
 
@@ -287,7 +289,7 @@ class Cat extends Pet {
     }
 }
 
-// clase Lobo (Wolf) que hereda de AnimalSalvaje (WildAnimal)
+// clase Lobo (oop.Wolf) que hereda de AnimalSalvaje (oop.WildAnimal)
 class Wolf extends WildAnimal {
     // constructor
     public Wolf(String habitat, int age, boolean endangeredSpecies) {

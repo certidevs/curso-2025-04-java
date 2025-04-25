@@ -1,3 +1,5 @@
+package sintaxis;
+
 public class Funciones {
     public static void main(String[] args) {
         Funciones funciones = new Funciones();

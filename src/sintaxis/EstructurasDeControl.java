@@ -1,3 +1,5 @@
+package sintaxis;
+
 public class EstructurasDeControl {
     public static void main(String[] args) {
 

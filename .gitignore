@@ -2,7 +2,10 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-
+.idea
+*.iml
+/.idea
+.idea/*
 ### Eclipse ###
 .apt_generated
 .classpath
@@ -27,9 +30,3 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-
-.idea
-.idea/**
-*.iml
-
-Retos
