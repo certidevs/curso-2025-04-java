@@ -8,3 +8,23 @@ https://www.jetbrains.com/idea/download/?section=windows
 
 * Tipos de datos
 * Operadores
+
+
+## Spring Boot estructura:
+
+* entidades
+  * Book
+  * Author
+  * Category
+  * Library
+  * User
+* controladores
+  * BookController
+  * AuthorController
+  * CategoryController
+  * LibraryController
+  * UserController
+* repositorios
+  * BookRepository
+  * AuthorRepository
+  * ....
