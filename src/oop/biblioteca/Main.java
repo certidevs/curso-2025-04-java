@@ -48,7 +48,26 @@ public class Main {
         System.out.println(crepusculo);
 
 
+
+
         // 3. RELACIÓN ENTRE LIBRO - AUTHOR
+        // A UN AUTOR LE AGREGAMOS 2 LIBROS
+
+        Author david = new Author();
+        Libro libro1 = new Libro();
+        Libro libro2 = new Libro();
+
+        david.getLibros().add(libro1);
+        david.getLibros().add(libro2);
+
+        libro1.setAuthor(david);
+        libro2.setAuthor(david);
+
+        System.out.println(david);
+
+
+
+
 
     }
 

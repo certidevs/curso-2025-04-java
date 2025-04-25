@@ -1,5 +1,7 @@
 package oop.biblioteca;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.StringJoiner;
 
 /**
@@ -10,7 +12,8 @@ public class Author {
     private Long id; // 1, 2, 3, 4....
     private String firstName;
     private String lastName;
-    // Añadir relación con libro
+    // Añadir relación con libro: OneToMany
+    private List<Libro> libros = new ArrayList<>();
 
     // constructor vacío
     public Author() {
@@ -46,6 +49,14 @@ public class Author {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public List<Libro> getLibros() {
+        return libros;
+    }
+
+    public void setLibros(List<Libro> libros) {
+        this.libros = libros;
     }
 
     @Override
