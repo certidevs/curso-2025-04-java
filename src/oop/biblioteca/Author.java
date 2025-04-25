@@ -10,6 +10,7 @@ public class Author {
     private Long id; // 1, 2, 3, 4....
     private String firstName;
     private String lastName;
+    // Añadir relación con libro
 
     // constructor vacío
     public Author() {

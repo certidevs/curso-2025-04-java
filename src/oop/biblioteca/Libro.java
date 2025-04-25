@@ -15,6 +15,9 @@ public class Libro {
     private Double precio;
     private Boolean disponible;
     private LocalDate fechaPublicacion;
+    // private String author;
+    private Author author; // relación con la clase Author
+
     // private LocalDateTime fechaActualizacion;
 
     // constructor/es
@@ -84,7 +87,14 @@ public class Libro {
         this.fechaPublicacion = fechaPublicacion;
     }
 
-    // toString
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
+// toString
 
 
     @Override

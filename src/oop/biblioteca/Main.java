@@ -20,6 +20,11 @@ public class Main {
 
         // 2. CREAR OBJETOS LIBRO:
         Libro quijote = new Libro();
+        quijote.setTitulo("El Quijote de la Mancha");
+        quijote.setAuthor(cervantes); // Relación ManyToOne
+        System.out.println(quijote);
+        System.out.println(quijote.getAuthor().getFirstName() + " " + quijote.getAuthor().getLastName());
+
         Libro celestina = new Libro("La celestina", 19.99);
         System.out.println(celestina);
 
