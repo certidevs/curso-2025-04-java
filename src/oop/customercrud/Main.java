@@ -22,6 +22,19 @@ public class Main {
 
             if (opcion == 1) {
                 System.out.println(customerRepository.findAll());
+
+            } else if (opcion == 2) {
+
+                System.out.println("Introduce ID de cliente que quieres encontrar: ");
+                Long id = scanner.nextLong();
+                Customer customer = customerRepository.findById(id);
+                if (customer != null) {
+                    System.out.println(customer);
+                } else {
+                    System.out.println("No existe el cliente con el ID: " + id);
+                }
+
+
             } else if (opcion == 5) {
                 System.out.println("Hasta luego.");
                 break;

@@ -11,6 +11,15 @@ public class CustomerRepository {
 
     private List<Customer> customers = new ArrayList<>();
 
+    // constructor con 2 clientes ficticios para practicar:
+    public CustomerRepository() {
+        Customer customer1 = new Customer(1L, "Cliente1", "Cliente1", "cliente1@certidevs.com", 40);
+        Customer customer2 = new Customer(2L, "Cliente2", "Cliente2", "cliente2@certidevs.com", 50);
+        customers.add(customer1);
+        customers.add(customer2);
+    }
+
+
     // Devuelve la lista de clientes para poder saber qué clientes hay
     public List<Customer> findAll() {
         return customers;
