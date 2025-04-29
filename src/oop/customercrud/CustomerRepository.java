@@ -69,4 +69,23 @@ public class CustomerRepository {
         }
         return false;
     }
+
+    //delete(Long id)
+    public boolean delete(Long id) {
+        // bucle que recorre la lista de clientes
+        for(int i = 0; i < customers.size(); i++) {
+            // compruebo si el id del cliente en la posición i coincide con el id buscado
+            if (customers.get(i).getId().equals(id)) {
+                // elimina el cliente de la posición i
+                customers.remove(i);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // elimina todos los clientes de la lista
+    public void deleteAll() {
+        customers.clear();
+    }
 }
