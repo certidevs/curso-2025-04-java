@@ -25,23 +25,35 @@ public class CustomerRepository {
         return customers;
         //return Collections.unmodifiableList(customers);
     }
-    // Devuelve un cliente por su id
+
+    /**
+     * Busca en la lista de clientes "customers" un cliente por su campo id
+     * Por ejemplo: le pedimos el cliente 5 y nos tiene que devolver un objeto Customer por id 5 si existe
+     */
     public Customer findById(Long id) {
-        for (Customer customer: customers){
+        // for (TipoDeDato variable: estructuradatos)
+        for (Customer customer: customers) {
             if (customer.getId().equals(id)){
                 return customer;
             }
         }
+
         return null;
         // throw new NoSuchElementException("Customer not found");
         // return Optional.empty();
     }
 
+    /**
+     * Inserta un objeto Customer en el arraylist "customers"
+     */
+    public void save(Customer customer) {
+        customers.add(customer);
+        // En una versión más sofisticada podría generar un id para el Customer
+    }
 
-    //save(Customer customer)
-    //findById(Long id)
+
     //update(Long id, Customer updatedCustomer)
     //delete(Long id)
-    //findAll()
+
 
 }
