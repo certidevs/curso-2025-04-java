@@ -52,8 +52,21 @@ public class CustomerRepository {
     }
 
 
-    //update(Long id, Customer updatedCustomer)
-    //delete(Long id)
-
-
+    // update(Long id, Customer updatedCustomer)
+    public boolean update(Long id, Customer updatedCustomer) {
+        // bucle que recorre la lista de clientes
+        for(int i = 0; i < customers.size(); i++) {
+            // obtiene el cliente de la posición i y lo guarda en una variable
+            Customer customer = customers.get(i);
+            // compruebo si el id del cliente actual coincide con el id que quiero
+            if (customer.getId().equals(id)) {
+                // asegura que el cliente actualiza tenga el mismo id (por seguridad)
+                updatedCustomer.setId(id);
+                // reemplaza el cliente ANTIGUO en la posición i con el cliente ACTUALIZADO
+                customers.set(i, updatedCustomer);
+                return true;
+            }
+        }
+        return false;
+    }
 }
