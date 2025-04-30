@@ -48,10 +48,10 @@ public class Main {
                 Long id = scanner.nextLong();
 
                 System.out.println("Introduce nombre de cliente: ");
-                String nombre = scanner.next();
+                String nombre = scanner.nextLine();
 
                 System.out.println("Introduce apellido de cliente: ");
-                String apellido = scanner.next();
+                String apellido = scanner.nextLine();
 
                 System.out.println("Introduce email de cliente: ");
                 String email = scanner.next();
@@ -76,10 +76,10 @@ public class Main {
                 }
 
                 System.out.println("Introduce nuevo nombre de cliente: ");
-                String nombre = scanner.next();
+                String nombre = scanner.nextLine();
 
                 System.out.println("Introduce nuevo apellido de cliente: ");
-                String apellido = scanner.next();
+                String apellido = scanner.nextLine();
 
                 System.out.println("Introduce nuevo email de cliente: ");
                 String email = scanner.next();
