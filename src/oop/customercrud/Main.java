@@ -64,7 +64,60 @@ public class Main {
 
                 customerRepository.save(customer);
 
+            } else if (opcion == 4) {
+                System.out.println("Introduce el ID del cliente que quieres actualizar: ");
+                Long id = scanner.nextLong();
+
+                // verificar si el cliente existe
+                Customer existingCustomer = customerRepository.findById(id);
+                if (existingCustomer == null) {
+                    System.out.println("No existe el cliente con el ID: " + id);
+                    continue;
+                }
+
+                System.out.println("Introduce nuevo nombre de cliente: ");
+                String nombre = scanner.next();
+
+                System.out.println("Introduce nuevo apellido de cliente: ");
+                String apellido = scanner.next();
+
+                System.out.println("Introduce nuevo email de cliente: ");
+                String email = scanner.next();
+
+                System.out.println("Introduce nueva edad de cliente: ");
+                Integer edad = scanner.nextInt();
+
+                // crear objeto Customer con los datos leídos
+                Customer updatedCustomer = new Customer(id, nombre, apellido, email, edad);
+                boolean updated = customerRepository.update(id, updatedCustomer);
+
+                if (updated) {
+                    System.out.println("Cliente actualizado con éxito.");
+                } else {
+                    System.out.println("No se ha podido actualizar el cliente.");
+                }
             } else if (opcion == 5) {
+                System.out.println("Introduce el ID del cliente que quieres eliminar: ");
+                Long id = scanner.nextLong();
+
+                boolean deleted = customerRepository.delete(id);
+
+                if (deleted) {
+                    System.out.println("Cliente eliminado correctamente.");
+                } else {
+                    System.out.println("No existe el cliente con el ID: " + id);
+                }
+            } else if (opcion == 6) {
+                System.out.println("¿Estás seguro de que deseas eliminar todos los clientes? (s/n)");
+                String confirmacion = scanner.next();
+
+                if (confirmacion.equalsIgnoreCase("s")) {
+                    customerRepository.deleteAll();
+                    System.out.println("Se han eliminado todos los clientes.");
+                } else {
+                    System.out.println("Operación cancelada.");
+                }
+            } else if (opcion == 7) {
                 System.out.println("Hasta luego.");
                 break;
             }
